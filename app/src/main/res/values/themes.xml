@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.TestTaskForHammerSystems" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorIconBottomNavigationView">@color/dark_grey</item>
+        <item name="colorBgBottomNavView">@color/grey</item>
+        <item name="colorSelectedIconBottomNavigationView">@color/pink</item>
+        <item name="colorTextPrimary">@color/charleston_green</item>
+        <item name="android:windowBackground">@color/cultured</item>
+        <item name="colorToolbar">@color/cultured</item>
+        <item name="colorCategoryButton">@color/white</item>
+        <item name="colorTextCategoryButton">@color/pale_gray</item>
+    </style>
+
+    <style name="Theme.TestTaskForHammerSystems" parent="Base.Theme.TestTaskForHammerSystems" />
+
+    <style name="Theme.TestTaskForHammerSystems.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TestTaskForHammerSystems.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TestTaskForHammerSystems.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

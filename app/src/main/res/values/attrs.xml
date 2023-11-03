@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorIconBottomNavigationView" format="color"/>
+    <attr name="colorBgBottomNavView" format="color"/>
+    <attr name="colorSelectedIconBottomNavigationView" format="color"/>
+    <attr name="colorTextPrimary" format="color"/>
+    <attr name="colorToolbar" format="color"/>
+    <attr name="colorCategoryButton" format="color"/>
+    <attr name="colorTextCategoryButton" format="color"/>
+</resources>

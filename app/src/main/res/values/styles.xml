@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationView" parent="">
+        <item name="android:background">?attr/colorBgBottomNavView</item>
+        <item name="itemIconTint">@drawable/navigation_view_colored</item>
+        <item name="itemTextColor">@drawable/navigation_view_colored</item>
+    </style>
+
+    <style name="Text" parent="TextAppearance.AppCompat" />
+
+    <style name="Text.Size16">
+        <item name="android:textSize">@dimen/size16</item>
+    </style>
+
+    <style name="Text.Size16.Primary">
+        <item name="android:textColor">?attr/colorTextPrimary</item>
+    </style>
+
+    <style name="Text.Size16.Primary.RobotoMedium">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Banner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/x1_25</item>
+    </style>
+
+    <style name="AppBarLayout" parent="">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="CollapsingToolbarLayout" parent="">
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed|enterAlwaysCollapsed</item>
+        <item name="contentScrim">?attr/colorToolbar</item>
+    </style>
+
+    <style name="HorizontalRecyclerView" parent="">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CategorieButton" parent="">
+        <item name="cornerRadius">@dimen/x0_75</item>
+        <item name="background">?attr/colorCategoryButton</item>
+        <item name="android:textColor">?attr/colorTextCategoryButton</item>
+        <item name="android:textSize">@dimen/size13</item>
+    </style>
+
+    <style name="Toolbar" parent="">
+        <item name="android:contentInsetLeft">@dimen/x0</item>
+        <item name="android:contentInsetStart">@dimen/x0</item>
+        <item name="contentInsetLeft">@dimen/x0</item>
+        <item name="contentInsetStart">@dimen/x0</item>
+        <item name="android:contentInsetRight">@dimen/x0</item>
+        <item name="android:contentInsetEnd">@dimen/x0</item>
+        <item name="contentInsetRight">@dimen/x0</item>
+        <item name="contentInsetEnd">@dimen/x0</item>
+    </style>
+</resources>
