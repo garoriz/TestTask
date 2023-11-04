@@ -19,8 +19,8 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_selecting_city"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/x3"
+        android:layout_height="@dimen/x3"
         android:layout_marginStart="@dimen/x1"
         android:layout_marginTop="@dimen/x5_25"
         android:src="@drawable/ic_keyboard_arrow_down"
@@ -29,8 +29,8 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_qr_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/x3"
+        android:layout_height="@dimen/x3"
         android:layout_marginTop="@dimen/x5_25"
         android:layout_marginEnd="@dimen/x2"
         android:src="@drawable/ic_qr_code"

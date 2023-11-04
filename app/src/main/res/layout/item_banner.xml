@@ -12,9 +12,9 @@
         android:layout_height="@dimen/x14"
         android:layout_marginHorizontal="@dimen/x1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:shapeAppearanceOverlay="@style/Banner"
         tools:src="@drawable/banner_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

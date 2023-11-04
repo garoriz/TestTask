@@ -13,6 +13,14 @@
         <item name="android:textSize">@dimen/size16</item>
     </style>
 
+    <style name="Text.Size14">
+        <item name="android:textSize">@dimen/size14</item>
+    </style>
+
+    <style name="Text.Size14.Second">
+        <item name="android:textColor">?attr/colorTextSecond</item>
+    </style>
+
     <style name="Text.Size16.Primary">
         <item name="android:textColor">?attr/colorTextPrimary</item>
     </style>
@@ -39,11 +47,17 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="CategorieButton" parent="">
-        <item name="cornerRadius">@dimen/x0_75</item>
-        <item name="background">?attr/colorCategoryButton</item>
-        <item name="android:textColor">?attr/colorTextCategoryButton</item>
+    <style name="VerticalRecyclerView" parent="">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CategoryButton" parent="">
+        <item name="android:textColor">@drawable/category_text_selector</item>
         <item name="android:textSize">@dimen/size13</item>
+        <item name="android:paddingVertical">@dimen/x1</item>
+        <item name="android:minHeight">@dimen/x0</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/category_selector</item>
     </style>
 
     <style name="Toolbar" parent="">
@@ -55,5 +69,18 @@
         <item name="android:contentInsetEnd">@dimen/x0</item>
         <item name="contentInsetRight">@dimen/x0</item>
         <item name="contentInsetEnd">@dimen/x0</item>
+    </style>
+
+    <style name="PriceButton" parent="">
+        <item name="cornerRadius">@dimen/x0_75</item>
+        <item name="strokeWidth">@dimen/x0_25</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="backgroundTint">?attr/colorBgPriceButton</item>
+        <item name="strokeColor">?attr/colorStrokePriceButton</item>
+        <item name="android:textColor">?attr/colorTextPriceButton</item>
+        <item name="android:textSize">@dimen/size13</item>
+        <item name="android:paddingVertical">@dimen/x1</item>
+        <item name="android:minHeight">@dimen/x0</item>
+        <item name="android:textAlignment">center</item>
     </style>
 </resources>

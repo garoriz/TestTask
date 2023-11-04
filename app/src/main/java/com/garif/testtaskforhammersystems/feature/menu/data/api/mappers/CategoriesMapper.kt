@@ -1,7 +1,7 @@
 package com.garif.testtaskforhammersystems.feature.menu.data.api.mappers
 
-import com.garif.testtaskforhammersystems.feature.menu.data.api.response.CategoriesResponse
-import com.garif.testtaskforhammersystems.feature.menu.data.api.response.Meal
+import com.garif.testtaskforhammersystems.feature.menu.data.api.response.categories.CategoriesResponse
+import com.garif.testtaskforhammersystems.feature.menu.data.api.response.categories.Meal
 import com.garif.testtaskforhammersystems.feature.menu.domain.entity.Category
 
 class CategoriesMapper {

@@ -95,4 +95,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="error">Произошла ошибка...</string>
+    <string name="meal_description">Какое-то описание</string>
+    <string name="meal_price">от 345 р</string>
 </resources>

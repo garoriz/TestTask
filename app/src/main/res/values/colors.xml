@@ -8,5 +8,8 @@
     <color name="charleston_green">#222831</color>
     <color name="cultured">#F3F5F9</color>
     <color name="dark_pink">#FD3A69</color>
+    <color name="dark_pink_20">#33FD3A69</color>
     <color name="pale_gray">#BEBEBE</color>
+    <color name="silver">#AAAAAD</color>
+    <color name="lotion">#FBFBFB</color>
 </resources>

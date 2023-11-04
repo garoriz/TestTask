@@ -7,4 +7,11 @@
     <attr name="colorToolbar" format="color"/>
     <attr name="colorCategoryButton" format="color"/>
     <attr name="colorTextCategoryButton" format="color"/>
+    <attr name="colorSelectedCategoryButton" format="color"/>
+    <attr name="colorTextSelectedCategoryButton" format="color"/>
+    <attr name="colorTextSecond" format="color"/>
+    <attr name="colorTextPriceButton" format="color"/>
+    <attr name="colorStrokePriceButton" format="color"/>
+    <attr name="colorBgPriceButton" format="color"/>
+    <attr name="colorDivider" format="color"/>
 </resources>

@@ -6,15 +6,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="?attr/selectableItemBackground">
 
-    <com.google.android.material.button.MaterialButton
+    <TextView
         android:id="@+id/btn_category"
-        style="@style/CategorieButton"
-        android:layout_width="wrap_content"
+        style="@style/CategoryButton"
+        android:layout_width="88dp"
+        android:elevation="@dimen/x1_25"
+        android:layout_marginVertical="@dimen/x2"
         android:layout_height="wrap_content"
-        tools:text="Пицца"
         android:layout_marginHorizontal="@dimen/x0_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Пицца" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,10 @@ package com.garif.testtaskforhammersystems.feature.menu.domain.entity
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "category")
-data class Category(
+@Entity(tableName = "meal")
+data class MealEntity(
     @PrimaryKey
-    val name: String,
+    val idMeal: String,
+    val strMeal: String,
+    val strMealThumb: String
 )

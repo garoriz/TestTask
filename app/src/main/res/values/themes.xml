@@ -5,10 +5,17 @@
         <item name="colorBgBottomNavView">@color/grey</item>
         <item name="colorSelectedIconBottomNavigationView">@color/pink</item>
         <item name="colorTextPrimary">@color/charleston_green</item>
-        <item name="android:windowBackground">@color/cultured</item>
-        <item name="colorToolbar">@color/cultured</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorToolbar">@color/white</item>
         <item name="colorCategoryButton">@color/white</item>
         <item name="colorTextCategoryButton">@color/pale_gray</item>
+        <item name="colorSelectedCategoryButton">@color/dark_pink_20</item>
+        <item name="colorTextSelectedCategoryButton">@color/dark_pink</item>
+        <item name="colorTextSecond">@color/silver</item>
+        <item name="colorTextPriceButton">@color/dark_pink</item>
+        <item name="colorStrokePriceButton">@color/dark_pink</item>
+        <item name="colorBgPriceButton">@color/lotion</item>
+        <item name="colorDivider">@color/cultured</item>
     </style>
 
     <style name="Theme.TestTaskForHammerSystems" parent="Base.Theme.TestTaskForHammerSystems" />
