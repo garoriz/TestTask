@@ -1,8 +1,5 @@
 package com.garif.testtaskforhammersystems.feature.menu.presentation
 
-import android.content.Context
-import android.net.ConnectivityManager
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,7 +8,10 @@ import com.garif.testtaskforhammersystems.feature.menu.domain.entity.Category
 import com.garif.testtaskforhammersystems.feature.menu.domain.entity.MealEntity
 import com.garif.testtaskforhammersystems.feature.menu.domain.usecase.GetCategoriesInDbUseCase
 import com.garif.testtaskforhammersystems.feature.menu.domain.usecase.GetCategoriesUseCase
+import com.garif.testtaskforhammersystems.feature.menu.domain.usecase.GetMealsByCategoryInDbUseCase
 import com.garif.testtaskforhammersystems.feature.menu.domain.usecase.GetMealsByCategoryUseCase
+import com.garif.testtaskforhammersystems.feature.menu.domain.usecase.SaveCategoriesUseCase
+import com.garif.testtaskforhammersystems.feature.menu.domain.usecase.SaveMealsUseCase
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -19,7 +19,9 @@ class MenuViewModel @Inject constructor(
     private val getCategoriesUseCase: GetCategoriesUseCase,
     private val getMealsByCategoryUseCase: GetMealsByCategoryUseCase,
     private val getCategoriesInDbUseCase: GetCategoriesInDbUseCase,
-    //private val getMealsByCategoryInDbUseCase: GetMealsByCategoryInDbUseCase,
+    private val saveCategoriesUseCase: SaveCategoriesUseCase,
+    private val saveMealsUseCase: SaveMealsUseCase,
+    private val getMealsByCategoryInDbUseCase: GetMealsByCategoryInDbUseCase
 ) : ViewModel() {
     private var _categories: MutableLiveData<Result<MutableList<Category>>> = MutableLiveData()
     val categories: LiveData<Result<MutableList<Category>>> = _categories
@@ -35,7 +37,9 @@ class MenuViewModel @Inject constructor(
             try {
                 val categories =
                     if (isNetworkAvailable) {
-                        getCategoriesUseCase()
+                        val categories = getCategoriesUseCase()
+                        saveCategoriesUseCase(categories)
+                        categories
                     } else {
                         getCategoriesInDbUseCase()
                     }
@@ -50,7 +54,14 @@ class MenuViewModel @Inject constructor(
     fun onGetMealsByCategory(category: String, isNetworkAvailable: Boolean) {
         viewModelScope.launch {
             try {
-                val meals = getMealsByCategoryUseCase(category)
+                val meals =
+                    if (isNetworkAvailable) {
+                        val meals = getMealsByCategoryUseCase(category)
+                        saveMealsUseCase(meals)
+                        meals
+                    } else {
+                        getMealsByCategoryInDbUseCase(category)
+                    }
                 _meals.value = Result.success(meals)
             } catch (ex: Exception) {
                 _meals.value = Result.failure(ex)

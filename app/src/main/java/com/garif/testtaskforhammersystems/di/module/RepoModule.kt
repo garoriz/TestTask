@@ -13,6 +13,7 @@ interface RepoModule {
     fun categoriesRepository(
         impl: CategoriesRepositoryImpl
     ): CategoriesRepository
+
     @Binds
     fun mealsRepository(
         impl: MealsRepositoryImpl

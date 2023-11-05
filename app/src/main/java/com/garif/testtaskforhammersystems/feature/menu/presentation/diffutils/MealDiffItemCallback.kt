@@ -1,7 +1,6 @@
 package com.garif.testtaskforhammersystems.feature.menu.presentation.diffutils
 
 import androidx.recyclerview.widget.DiffUtil
-import com.garif.testtaskforhammersystems.feature.menu.domain.entity.Banner
 import com.garif.testtaskforhammersystems.feature.menu.domain.entity.MealEntity
 
 class MealDiffItemCallback : DiffUtil.ItemCallback<MealEntity>() {

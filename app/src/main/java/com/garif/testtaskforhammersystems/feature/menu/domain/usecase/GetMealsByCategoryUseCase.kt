@@ -1,8 +1,6 @@
 package com.garif.testtaskforhammersystems.feature.menu.domain.usecase
 
-import com.garif.testtaskforhammersystems.feature.menu.domain.entity.Category
 import com.garif.testtaskforhammersystems.feature.menu.domain.entity.MealEntity
-import com.garif.testtaskforhammersystems.feature.menu.domain.repository.CategoriesRepository
 import com.garif.testtaskforhammersystems.feature.menu.domain.repository.MealsRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

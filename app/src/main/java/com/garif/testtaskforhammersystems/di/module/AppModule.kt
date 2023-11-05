@@ -1,6 +1,5 @@
 package com.garif.testtaskforhammersystems.di.module
 
-import android.content.Context
 import com.garif.testtaskforhammersystems.feature.menu.data.api.mappers.CategoriesMapper
 import com.garif.testtaskforhammersystems.feature.menu.data.api.mappers.MealsMapper
 import dagger.Module

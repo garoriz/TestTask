@@ -40,21 +40,19 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = FragmentMenuBinding.bind(view)
 
-        with(binding) {
-            (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
-            bannerListAdapter = BannerListAdapter()
+        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
+        bannerListAdapter = BannerListAdapter()
 
-            binding.banners.run {
-                adapter = bannerListAdapter
-            }
-
-            bannerListAdapter?.submitList(
-                mutableListOf(
-                    Banner(R.drawable.banner_1),
-                    Banner(R.drawable.banner_2),
-                )
-            )
+        binding.banners.run {
+            adapter = bannerListAdapter
         }
+
+        bannerListAdapter?.submitList(
+            mutableListOf(
+                Banner(R.drawable.banner_1),
+                Banner(R.drawable.banner_2),
+            )
+        )
 
         initObservers()
         viewModel.onGetCategories(isNetworkAvailable())
@@ -113,7 +111,7 @@ class MenuFragment : Fragment(R.layout.fragment_menu) {
         ).show()
     }
 
-    fun isNetworkAvailable(): Boolean {
+    private fun isNetworkAvailable(): Boolean {
         return try {
             val cm = requireContext().getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
             cm.getNetworkCapabilities(cm.activeNetwork)!!.hasCapability(NET_CAPABILITY_INTERNET)

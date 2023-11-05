@@ -1,9 +1,7 @@
 package com.garif.testtaskforhammersystems.feature.menu.presentation.adapter.category
 
-import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.garif.testtaskforhammersystems.R
